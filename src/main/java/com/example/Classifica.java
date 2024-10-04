@@ -3,7 +3,11 @@ package com.example;
 import java.util.ArrayList;
 
 class Classifica {
-    private ArrayList<Cavallo> risultati = new ArrayList<>();
+    private ArrayList<Cavallo> risultati;
+
+    public Classifica() {
+        risultati = new ArrayList<>();
+    }
 
     public void aggiungiRisultato(Cavallo cavallo) {
         risultati.add(cavallo);
